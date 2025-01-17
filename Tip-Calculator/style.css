@@ -66,63 +66,34 @@ body {
     margin: auto;
     background-color: limegreen;
     color: white;
-    bottom: 30px;
     text-align: center;
     border-radius: 2px;
     padding: 16px;
     position: fixed;
+    bottom: 30px;
 }
 
 #tip-amount.show {
     visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein {
-    from {
-        bottom: 0;
-        opacity: 0;
-    }
-
-    to {
-        bottom: 30px;
-        opacity: 1;
-    }
 }
 
 @keyframes fadein {
     from {
-        bottom: 30;
-        opacity: 1;
-    }
-
-    to {
-        bottom: 0px;
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes fadeout {
-    from {
-        bottom: 0;
         opacity: 0;
     }
 
     to {
-        bottom: 30px;
         opacity: 1;
     }
 }
 
 @keyframes fadeout {
     from {
-        bottom: 30px;
         opacity: 1;
     }
 
     to {
-        bottom: 0;
         opacity: 0;
     }
 }
