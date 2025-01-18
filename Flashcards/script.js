@@ -23,10 +23,10 @@ function divMaker(text) {
     div.appendChild(h2_question);
     div.appendChild(h2_answer);
 
-    div.addEventListener("click", function() {
-        if(h2_answer.style.display == "none") 
+    div.addEventListener("click", function () {
+        if (h2_answer.style.display == "none")
             h2_answer.style.display = "block";
-            else
+        else
             h2_answer.style.display = "none";
     });
 
