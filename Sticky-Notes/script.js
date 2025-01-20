@@ -38,23 +38,17 @@ function createNote() {
 
     container2.insertAdjacentElement("beforeend", node0);
 
-    node0.addEventListener("mouseenter", function() {
+    node0.addEventListener("mouseenter", function () {
         node0.style.transform = "scale(1.1)";
     })
 
-    node0.addEventListener("mouseleave", function() {
+    node0.addEventListener("mouseleave", function () {
         node0.style.transform = "scale(1)";
     })
 
-    node0.addEventListener("dblclick", function() {
+    node0.addEventListener("dblclick", function () {
         node0.remove();
     })
-
-    node0.addEventListener("keydown", function(event) {
-        if (event.key === "Enter") {
-            createNote();
-        }
-    });
 
     document.getElementById("note-text").value = '';
 }
